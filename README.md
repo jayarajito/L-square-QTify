@@ -20,7 +20,7 @@ git add .
 git commit -m “Test commit”
 git push
 
-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
+//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//
 
 https://l-square-q-tify-jade.vercel.app/
 
