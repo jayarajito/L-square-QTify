@@ -20,8 +20,6 @@ git add .
 git commit -m “Test commit”
 git push
 
-//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//
-
 https://l-square-q-tify-jade.vercel.app/
 
 npm install @mui/material @emotion/react @emotion/styled
