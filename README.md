@@ -16,3 +16,13 @@ git pull https://github.com/jayarajito/L-square-QTify.git
 npx create-react-app qtify
 cd qtify
 npm start
+git add .
+git commit -m “Test commit”
+git push
+
+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
+
+https://l-square-q-tify-jade.vercel.app/
+
+npm install @mui/material @emotion/react @emotion/styled
+npm i react-router-dom
