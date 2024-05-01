@@ -1,0 +1,26 @@
+Clone the repository
+
+# Go to the workspace directory
+
+cd ~/workspace
+
+
+# Clone the repository for this ME.
+
+git clone git@gitlab.crio.do:COHORT_ME_QTIFY_ENROLL_1698231692749/jayarajito-ME_QTIFY.git
+
+
+Fetch the starter code
+
+
+# Go into the cloned repo directory.
+
+cd ~/workspace/jayarajito-ME_QTIFY/
+
+
+# Setup the remote repository and pull the code stubs for this ME.
+
+git remote add ME_QTIFY_MODULE_NAVBAR_STUB git@gitlab.crio.do:ME_QTIFY_STUBS/ME_QTIFY_MODULE_NAVBAR_STUB.git
+
+
+git pull ME_QTIFY_MODULE_NAVBAR_STUB master --allow-unrelated-histories --no-edit

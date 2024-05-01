@@ -1,8 +1,8 @@
 .navbar {
   background-color: var(--color-primary);
-  height: 74px;
+  height: 72px;
   width: 100%;
-  padding: 0px 32px;
+  padding: 0px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
