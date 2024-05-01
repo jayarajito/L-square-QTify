@@ -24,3 +24,24 @@ git remote add ME_QTIFY_MODULE_NAVBAR_STUB git@gitlab.crio.do:ME_QTIFY_STUBS/ME_
 
 
 git pull ME_QTIFY_MODULE_NAVBAR_STUB master --allow-unrelated-histories --no-edit
+
+
+Deploy your latest implementation
+Don’t forget to push your latest code to your QTify GitHub repository and make sure your deployed Vercel link has the latest implementation including the components you built in this module.
+
+
+Test your implementation
+It is mandatory to run the assessment script before you push your code for assessment.
+
+Create a new file called as submit.txt. This file must be in your project folder, do not create any separate folder for it.
+
+Paste your deployed link in the submit.txt. There should be nothing else in this file except your project link.
+
+Run the runAssessment.sh script to run the integration tests present in the assessment folder.
+
+
+cd ~/workspace/jayarajito-ME_QTIFY
+
+chmod +x run_assessment.sh
+
+./run_assessment.sh
