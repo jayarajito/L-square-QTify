@@ -27,3 +27,9 @@ https://l-square-q-tify-jade.vercel.app/
 
 npm install @mui/material @emotion/react @emotion/styled
 npm i react-router-dom
+npm i axios
+npm i swiper
+
+Attempted import error: 'Navigation' is not exported from 'swiper' (imported as 'Navigation').
+
+export 'Navigation' (imported as 'Navigation') was not found in 'swiper' (possible exports: Swiper, default)

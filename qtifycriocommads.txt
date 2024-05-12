@@ -45,3 +45,80 @@ cd ~/workspace/jayarajito-ME_QTIFY
 chmod +x run_assessment.sh
 
 ./run_assessment.sh
+
+
+Commit and push your code for assessment
+Ensure you have a __CRIO__/metadata.json file and it has the below contents
+
+
+{
+
+    "module_id": "ME_QTIFY_MODULE_NAVBAR",
+
+    "me_id": "ME_QTIFY"
+
+}
+
+
+Use the commands from the code block below to commit your changes and push them to the remote Git repository for assessment.
+
+
+
+
+cd ~/workspace/jayarajito-ME_QTIFY
+
+git add .
+
+git commit -m "ME_QTIFY_MODULE_NAVBAR"
+
+git push -u origin master
+
+
+# Ensure you have no pending commits
+
+git status
+
+
+
+If all the tests are passing locally but the assessment fails, pull the latest stubs using below commands and ensure all the tests are passing locally
+
+
+cd ~/workspace/jayarajito-ME_QTIFY/
+
+git pull ME_QTIFY_MODULE_NAVBAR_STUB master --allow-unrelated-histories --no-edit
+After you have pushed your changes, you can check this link to confirm if the remote Git repo has received your code.
+
+https://gitlab.crio.do/dashboard/activity?nav_source=navbar
+
+
+Pull the source code from the repository
+Copy the commands from the code block below and paste them in your Workspace terminal.
+
+
+
+# Go into the cloned repo directory.
+
+cd ~/workspace/jayarajito-ME_QTIFY/
+
+
+# Setup the remote repository & pull the code stubs for this module.
+
+git remote add ME_QTIFY_MODULE_HEROSECTION_STUB git@gitlab.crio.do:ME_QTIFY_STUBS/ME_QTIFY_MODULE_HEROSECTION_STUB.git
+
+git pull ME_QTIFY_MODULE_HEROSECTION_STUB master --allow-unrelated-histories --no-edit
+
+
+Type **y **as mentioned above and then hit Enter.
+
+And then choose **Accept Incoming Change **in the following 2 files:
+
+CRIO/metadata.json
+
+
+assessment/cypress/e2e/spec.cy.js
+Commit these changes:
+
+
+git add .
+
+git commit -m "resolved merge conflicts"
