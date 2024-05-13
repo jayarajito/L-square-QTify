@@ -1,18 +1,32 @@
-.wrapper {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+.sectionWrapper {
+	width: 100%;
+	margin-bottom: 25px;
 }
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.cardWrapper {
+	margin-top: 10px;
+}
+
+.wrapper {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
 }
 
 .toggleText {
-  cursor: pointer;
-  color: var(--color-primary);
+	margin-right: 10px;
+	cursor: pointer;
+	color: var(--color-primary);
 }
-.cardsWrapper {
-  margin-top: 18px;
+
+@media only screen and (max-width: 576px) {
+	.wrapper {
+		gap: 5px;
+	}
 }

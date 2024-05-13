@@ -1,35 +1,20 @@
-import "./App.css";
-import React, { useEffect, useState } from "react";
-import Hero from "./components/Hero/Hero";
-import HomePage from "./pages/HomePage/HomePage";
-import Navbar from "./components/Navbar/Navbar";
-import StyledEngineProvider from "@mui/material/StyledEngineProvider";
-import { Outlet } from "react-router-dom";
-import { fetchNewAlbums, fetchSongs, fetchTopAlbums } from "./api/api";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import AlbumDetails from "./pages/AlbumDetails/AlbumDetails";
 
 function App() {
-  const [data, setData] = useState({});
-  const generateData = (key, source) => {
-    source().then((data) => {
-      setData((preState) => {
-        return { ...preState, [key]: data };
-      });
-    });
-  };
-  useEffect(() => {
-    generateData("topAlbums", fetchTopAlbums);
-    generateData("newAlbums", fetchNewAlbums);
-    generateData("songs", fetchSongs);
-  }, []);
-  const { topAlbums = [], newAlbums = [], songs = [] } = data;
-  return (
-    <>
-      <StyledEngineProvider injectFirst>
-        <Navbar searchData={[...topAlbums, ...newAlbums]} />
-        <Outlet context={{ data: { topAlbums, newAlbums, songs } }} />
-      </StyledEngineProvider>
-    </>
-  );
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<LandingPage />} />
+
+				<Route path="/album/:slug" element={<AlbumDetails />} />
+
+				<Route path="*" element={<LandingPage />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
