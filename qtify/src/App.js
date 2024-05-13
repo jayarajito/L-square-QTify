@@ -4,17 +4,17 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import AlbumDetails from "./pages/AlbumDetails/AlbumDetails";
 
 function App() {
-	return (
-		<div className="App">
-			<Routes>
-				<Route path="/" element={<LandingPage />} />
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
 
-				<Route path="/album/:slug" element={<AlbumDetails />} />
+        <Route path="/album/:slug" element={<AlbumDetails />} />
 
-				<Route path="*" element={<LandingPage />} />
-			</Routes>
-		</div>
-	);
+        <Route path="*" element={<LandingPage />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
